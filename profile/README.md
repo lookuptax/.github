@@ -152,19 +152,13 @@ LookupTax exposes a common API interface across supported countries.
 
 Example:
 
-```http
-POST https://api.lookuptax.com/tax/validate
-Content-Type: application/json
-
-{
-  "taxId": "DE123456789",
-  "countryIso": "DE"
-}
+```curl -X GET "https://api.lookuptax.com/validate?country_iso=XX&tin=123456789W" \
+  -H "X-API-Key: your-api-key-here"
 ```
 
 The API returns structured validation results and, where available and permitted by the underlying source, business information such as registered name and address.
 
-[Read the LookupTax API documentation →](https://lookuptax.com/docs)
+[Read the LookupTax API documentation →](https://demo.lookuptax.com/api/))
 
 ---
 
@@ -294,7 +288,7 @@ LookupTax handles that infrastructure so engineering teams can focus on the appl
 | Resource                    | Link                                                          |
 | --------------------------- | ------------------------------------------------------------- |
 | LookupTax website           | https://lookuptax.com/                                        |
-| API documentation           | https://lookuptax.com/docs                                    |
+| API documentation           | https://demo.lookuptax.com/api/                                   |
 | Supported countries         | https://lookuptax.com/countries                               |
 | Pricing                     | https://lookuptax.com/pricing                                 |
 | Python SDK                  | https://github.com/lookuptax/lookuptax-sdk-python             |
