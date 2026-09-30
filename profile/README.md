@@ -152,7 +152,8 @@ LookupTax exposes a common API interface across supported countries.
 
 Example:
 
-```curl -X GET "https://api.lookuptax.com/validate?country_iso=XX&tin=123456789W" \
+```
+curl -X GET "https://api.lookuptax.com/validate?country_iso=XX&tin=123456789W" \
   -H "X-API-Key: your-api-key-here"
 ```
 
